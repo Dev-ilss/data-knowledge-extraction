@@ -20,6 +20,7 @@ data_subset = data_subset[data_subset['country_of_residence'] != 'TOTAL']
 data_subset = data_subset[data_subset['citizenship'] != 'TOTAL']
 
 #print(len(data_subset))
-
 print(data_subset.head(6))
 
+#Exportamos csv limpio
+data_subset.to_csv('limpio.csv', encoding='utf-8')
